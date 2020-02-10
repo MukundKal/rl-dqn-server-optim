@@ -31,6 +31,9 @@ hundreds of millions of dollars over the
 years.
 
 
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/deepmind.PNG)
+
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/deepmind2.PNG)
 
 
 ## 1. Introduction :
@@ -51,39 +54,51 @@ operates. At a given timestep, the server model has as input its intrinsic tempe
 of users online and the data rate going through it. Given, the 3-tuple, the agent has to predict an
 action as defined in the action space. The states and action spaces are described on the following
 page. This RL setup is illustrated below :
-The ​ **variables** ​of this environment (at any minute) are given as follows :
-
-- The number of users online
-- The temperature of the server
-- The data transmission rate through the server
+![The RL Framework](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/Rl.PNG)
 
 
-- The energy spent by the server’s internal cooling system that automatically brings the server’s
+The **variables** of this environment (at any minute) are given as follows :
+* The number of users online
+* The temperature of the server
+* The data transmission rate through the server
+* The energy spent by the server’s internal cooling system that automatically brings the server’s
 temperature back to the optimal range whenever the server’s temperature goes outside this
 optimal range.
-- The energy spent by the agent onto the server in order to heat it or cool it.
-The ​ **state** ​of the server at a time t is given as the 3-tuple shown below :
+* The energy spent by the agent onto the server in order to heat it or cool it.
+
+
+The  **state** of the server at a time t is given as the 3-tuple shown below :
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/tuple.PNG)
     Thus, the input vector will consist of three elements.The agent will take this vector as
 input, and will return the action to play at each timestep.
-    The temperature of the server can be approximated as given and for simplicity purposes,
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/servermodel.PNG)
+
+ The temperature of the server can be approximated as given and for simplicity purposes,
 we just suppose that these correlations are linear.
-    This is the case because the more the number of users online, the more processing power
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/temp.PNG)
+
+ 
+This is the case because the more the number of users online, the more processing power
 will be used by the server which will lead to heat dissipation and raise the temperature. Also, a
 high data network throughput will lead to heat dissipation which similarly raises the temperature.
 Different months will have varying atmospheric conditions and temperatures for example :
-
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/temp.PNG)
 
 The energy spent by a system (our agent or the server’s internal cooling system) that
 changes the server’s temperature within 1 unit of time can be approximated as proportional to
-change in the temperature caused i.e. for simplicity purposes; taking constant as
+change in the temperature caused i.e. ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/form1.PNG) for simplicity purposes; taking constant as
+Thus, ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/form2.PNG)
 
-1. Thus,
-    The actions are simply the temperature changes that the agent can cause inside the server,
+The actions are simply the temperature changes that the agent can cause inside the server,
 in order to heat it up or cool it down. In order to make our actions discrete, we will consider 5
-possible temperature changes from −3 ◦ C to +3 ◦ C, so that we end up with the 5 following
-possible actions that the agent can play to regulate the temperature of the server :
-    The ​ **reward** ​ in the RL framework which is used to train the agent is the energy difference
+possible temperature changes from **−3 ◦ C to +3 ◦ C** , so that we end up with the 5 following
+possible actions that the agent can play to *regulate the temperature of the server* :
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/1.actions.PNG)
+
+
+  The **reward** in the RL framework which is used to train the agent is the energy difference
 with our agent turned on vs the internal cooling system.
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/2.reward.PNG)
 
 
 ## 2. Mathematical Formulation :
