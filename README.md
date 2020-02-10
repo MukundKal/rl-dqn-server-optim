@@ -1,12 +1,4 @@
-# ​ Minimizing Costs in Energy
-
-# Consumption of a Data Center
-
-# (Using Deep Q-Learning)
-
-
-
-## Abstract :
+# Minimizing Costs in Energy Consumption of a Data Center *(using Deep Q-Learning)*
 
 Tech companies have tremendous cost coming from their data center. A large portion of
 that is the cooling required to keep their servers operating with optimal performance. So, the
@@ -14,11 +6,12 @@ problem to solve is ​ _minimizing_ ​ the energy consumption of cooling the s
 their optimal range which will as a result minimize the electricity cost and save tremendous
 amounts of money and therefore, millions of dollars can be saved.
 
+
 ## Inspiration :
 
 In 2016, DeepMind AI minimized a big
-part of ​Google’s cost by reducing Google Data
-Centre Cooling Bill by 40%​ using their DQN
+part of Google’s cost by reducing Google *Data
+Centre Cooling Bill by 40%* using their DQN
 AI model (Deep Q-Learning). In our project we
 will try and work on this very problem. We will
 set up our own server environment, and we will
@@ -28,16 +21,16 @@ an optimal range of temperatures while saving
 the maximum energy, therefore minimizing the
 costs.
 After accounting for "electrical losses
-and other non-cooling inefficiencies," ​this 40
-percent reduction translated into a 15 percent
-reduction in overall power saving​, says
-Google. Considering that the company used
+and other non-cooling inefficiencies,
+**"this 40 percent reduction translated into a 15 percent reduction in overall power saving"**, according to Google. Considering that the company used
 some 4,402,836 MWh of electricity in 2014
 (equivalent to the amount of energy
 consumed by 366,903 US households), this
 15 percent will translate into savings of
 hundreds of millions of dollars over the
 years.
+
+
 
 
 ## 1. Introduction :
