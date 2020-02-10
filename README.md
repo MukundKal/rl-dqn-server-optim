@@ -76,40 +76,6 @@ input, and will return the action to play at each timestep.
 ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/servermodel.PNG)
 
 
-The temperature of the server can be approximated as given and for simplicity purposes,
-we just suppose that these correlations are linear.
-
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/temp.PNG)
-
- 
-This is the case because the more the number of users online, the more processing power
-will be used by the server which will lead to heat dissipation and raise the temperature. Also, a
-high data network throughput will lead to heat dissipation which similarly raises the temperature.
-Different months will have varying atmospheric conditions and temperatures for example :
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/array.PNG)
-
-
-
-The energy spent by a system (our agent or the server’s internal cooling system) that
-changes the server’s temperature within 1 unit of time can be approximated as proportional to
-change in the temperature caused i.e. 
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/form1.PNG) 
-For simplicity purposes; taking constant as:
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/form2.PNG)
-
-The actions are simply the temperature changes that the agent can cause inside the server,
-in order to heat it up or cool it down. In order to make our actions discrete, we will consider 5
-possible temperature changes from **−3 ◦ C to +3 ◦ C** , so that we end up with the 5 following
-possible actions that the agent can play to *regulate the temperature of the server* :
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/1actions.PNG)
-
-
-  The **reward** in the RL framework which is used to train the agent is the energy difference
-with our agent turned on vs the internal cooling system.
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/2reward.PNG)
-
-
-
 
 ## Simulation:
 
@@ -130,6 +96,7 @@ with our agent turned on vs the internal cooling system.
 ## Results and Analysis :
 After training the model for 100 epochs each being 5 months, the model was tested for 1
 year and the results were a savings on around 40-50% depending on different trials.
+
 ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/5.PNG)
 
 
