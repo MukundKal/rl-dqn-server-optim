@@ -1,4 +1,4 @@
-# Artificial Intelligence for Business - Case Study 2
+
 # Training the AI
 
 # Installing Keras

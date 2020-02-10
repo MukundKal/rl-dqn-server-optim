@@ -1,4 +1,4 @@
-# Artificial Intelligence for Business - Case Study 2
+
 # Implementing Deep Q-Learning with Experience Replay
 
 # Importing the libraries
