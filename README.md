@@ -135,13 +135,13 @@ year and the results were a savings on around 40-50% depending on different tria
 
 ## Important References :
 
-1. _DeepMind, 2016;_ ​ **_DeepMind AI Reduces Google Data Centre Cooling Bill by 40%_**
-2. _Richard Sutton et al., 1998,_ ​ **_Reinforcement Learning I: Introduction_**
-3. _Arthur Juliani, 2016,_ ​ **_Simple Reinforcement Learning with Tensorflow (Part 4)_**
-4. _D. J. White, 1993,_ ​ **_A Survey of Applications of Markov Decision Processes_**
-5. _Richard Sutton, 1988,_ ​ **_Learning to Predict by the Methods of Temporal Differences_**
-6. _Michel Tokic, 2010,_ ​ **_Adaptive ε-greedy Exploration in Reinforcement Learning Based_**
+1. _DeepMind, 2016;_  **_DeepMind AI Reduces Google Data Centre Cooling Bill by 40%_**
+2. _Richard Sutton et al., 1998,_  **_Reinforcement Learning I: Introduction_**
+3. _Arthur Juliani, 2016,_  **_Simple Reinforcement Learning with Tensorflow (Part 4)_**
+4. _D. J. White, 1993,_  **_A Survey of Applications of Markov Decision Processes_**
+5. _Richard Sutton, 1988,_  **_Learning to Predict by the Methods of Temporal Differences_**
+6. _Michel Tokic, 2010,_  **_Adaptive ε-greedy Exploration in Reinforcement Learning Based_**
     **_on Value Differences_**
-7. _Tom Schaul et al., Google DeepMind, 2016,_ ​ **_Prioritized Experience Replay_**
+7. _Tom Schaul et al., Google DeepMind, 2016,_  **_Prioritized Experience Replay_**
 
 
