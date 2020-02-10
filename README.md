@@ -75,20 +75,20 @@ input, and will return the action to play at each timestep.
 
 ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/servermodel.PNG)
 
-
-
 ## Simulation:
 
-**Building the Environment:**
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/steps.PNG)
+
+1. **Building the Environment:**
 ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/1.PNG)
 
-**Neural Network Architecture:**
+2. **Neural Network Architecture:**
 ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/2.PNG)
 
-**Implementing the DQN:**
+3. **Implementing the DQN:**
 ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/3.PNG)
 
-**Simulation Setup:**
+4. **Training and Testing Setup:**
 ![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/4.PNG)
 
 
