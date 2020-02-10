@@ -31,9 +31,9 @@ hundreds of millions of dollars over the
 years.
 
 
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/deepmind.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/deepmind.PNG)
 
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/deepmind2.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/deepmind2.PNG)
 
 
 ## 1. Introduction :
@@ -54,7 +54,7 @@ operates. At a given timestep, the server model has as input its intrinsic tempe
 of users online and the data rate going through it. Given, the 3-tuple, the agent has to predict an
 action as defined in the action space. The states and action spaces are described on the following
 page. This RL setup is illustrated below :
-![The RL Framework](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/Rl.PNG)
+![The RL Framework](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/Rl.PNG)
 
 
 The **variables** of this environment (at any minute) are given as follows :
@@ -68,28 +68,28 @@ optimal range.
 
 
 The  **state** of the server at a time t is given as the 3-tuple shown below :
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/tuple.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/tuple.PNG)
 
 Thus, the input vector will consist of three elements.The agent will take this vector as
 input, and will return the action to play at each timestep.
 
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/servermodel.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/servermodel.PNG)
 
 ## Simulation:
 
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/steps.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/steps.PNG)
 
 1. **Building the Environment:**
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/1.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/1.PNG)
 
 2. **Neural Network Architecture:**
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/2.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/2.PNG)
 
 3. **Implementing the DQN:**
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/3.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/3.PNG)
 
 4. **Training and Testing Setup:**
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/4.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/4.PNG)
 
 
 
@@ -97,7 +97,7 @@ input, and will return the action to play at each timestep.
 After training the model for 100 epochs each being 5 months, the model was tested for 1
 year and the results were a savings on around 40-50% depending on different trials.
 
-![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/5.PNG)
+![](https://raw.githubusercontent.com/MukundKal/rl-dqn-server-optim/master/img/fillers/5.PNG)
 
 
 ## Important References :
